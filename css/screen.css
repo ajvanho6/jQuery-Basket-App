@@ -1,0 +1,269 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'droid_sansbold';
+  src: url("../assets/fonts/droidsans-bold-webfont.eot");
+  src: url("../assets/fonts/droidsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidsans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/droidsans-bold-webfont.woff") format("woff"), url("../assets/fonts/droidsans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/droidsans-bold-webfont.svg#droid_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_sansregular';
+  src: url("../assets/fonts/droidsans-webfont.eot");
+  src: url("../assets/fonts/droidsans-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidsans-webfont.woff2") format("woff2"), url("../assets/fonts/droidsans-webfont.woff") format("woff"), url("../assets/fonts/droidsans-webfont.ttf") format("truetype"), url("../assets/fonts/droidsans-webfont.svg#droid_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_serifbold';
+  src: url("../assets/fonts/droidserif-bold-webfont.eot");
+  src: url("../assets/fonts/droidserif-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidserif-bold-webfont.woff2") format("woff2"), url("../assets/fonts/droidserif-bold-webfont.woff") format("woff"), url("../assets/fonts/droidserif-bold-webfont.ttf") format("truetype"), url("../assets/fonts/droidserif-bold-webfont.svg#droid_serifbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_serifbold_italic';
+  src: url("../assets/fonts/droidserif-bolditalic-webfont.eot");
+  src: url("../assets/fonts/droidserif-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidserif-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/droidserif-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/droidserif-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/droidserif-bolditalic-webfont.svg#droid_serifbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_serifitalic';
+  src: url("../assets/fonts/droidserif-italic-webfont.eot");
+  src: url("../assets/fonts/droidserif-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidserif-italic-webfont.woff2") format("woff2"), url("../assets/fonts/droidserif-italic-webfont.woff") format("woff"), url("../assets/fonts/droidserif-italic-webfont.ttf") format("truetype"), url("../assets/fonts/droidserif-italic-webfont.svg#droid_serifitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'droid_serifregular';
+  src: url("../assets/fonts/droidserif-regular-webfont.eot");
+  src: url("../assets/fonts/droidserif-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/droidserif-regular-webfont.woff2") format("woff2"), url("../assets/fonts/droidserif-regular-webfont.woff") format("woff"), url("../assets/fonts/droidserif-regular-webfont.ttf") format("truetype"), url("../assets/fonts/droidserif-regular-webfont.svg#droid_serifregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+h1 {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "droid_serifbold";
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 1px 2px; }
+
+p {
+  font-family: "droid_serifregular";
+  font-size: 0.875em;
+  line-height: 1.71429em; }
+
+a {
+  text-decoration: none; }
+
+.sprites-sprite, .sprites-hover-trash, .sprites-logo, .sprites-minus-sign, .sprites-plus-sign, .sprites-trash {
+  background-image: url("../assets/images/sprites.png");
+  background-repeat: no-repeat; }
+
+.sprites-hover-trash {
+  background-position: 0 0; }
+
+.sprites-logo {
+  background-position: 0 -22px;
+  width: 201px;
+  height: 53px;
+  margin-left: 20px; }
+
+.sprites-minus-sign {
+  background-position: 0 -75px;
+  width: 16px;
+  height: 14px;
+  display: inline-block;
+  margin-left: -20px;
+  vertical-align: bottom; }
+  .sprites-minus-sign:hover {
+    cursor: pointer; }
+
+.sprites-plus-sign {
+  background-position: 0 -89px;
+  width: 16px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: top; }
+  .sprites-plus-sign:hover {
+    cursor: pointer; }
+
+.sprites-trash {
+  background-position: 0 -103px;
+  width: 16px;
+  height: 22px;
+  margin-bottom: 4px; }
+  .sprites-trash:hover {
+    background-position: 0 0;
+    cursor: pointer; }
+
+header {
+  margin: 0 auto;
+  padding-top: 170px; }
+
+@media (min-width: 668px) {
+  header {
+    width: 530px; } }
+.hovered {
+  background: #dddddd; }
+
+#main {
+  margin: 0 auto;
+  width: 530px; }
+  #main .textContent {
+    margin: 28px 0px 70px 20px; }
+  #main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 35px; }
+  #main td {
+    padding: 5px 20px; }
+  #main thead {
+    border-bottom: 1px solid #666666; }
+    #main thead td {
+      padding: 0px 20px;
+      vertical-align: bottom;
+      font-family: "droid_serifbold"; }
+  #main input.read {
+    border: none;
+    background: transparent;
+    width: 42px;
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    font-family: "droid_serifregular"; }
+  #main #vat, #main #subtotal {
+    color: #8f8f8f; }
+  #main #total {
+    font-family: "droid_serifbold"; }
+  #main #empty td {
+    padding: 10px 20px; }
+  #main #four td {
+    padding: 35px 20px 0px 20px;
+    color: #8f8f8f; }
+  #main #five td {
+    padding: 0px 20px;
+    color: #8f8f8f; }
+  #main #six td {
+    padding: 20px;
+    color: #000;
+    font-family: "droid_serifbold"; }
+  #main input[type="text"] {
+    width: 40px;
+    height: 30px;
+    font-size: 0.875em;
+    line-height: 1.71429em; }
+  #main #endCart {
+    float: right;
+    color: #fff;
+    background: #000066;
+    font-family: "droid_sansbold";
+    border: none;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-right: 78px;
+    -moz-box-shadow: 4px 3px 8px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 3px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 3px 8px 2px rgba(0, 0, 0, 0.5); }
+    #main #endCart:hover {
+      background: #3333ff;
+      cursor: pointer; }
+    #main #endCart:focus {
+      outline: none; }
+  #main .help {
+    clear: both;
+    margin-bottom: 170px; }
+
+@media (min-width: 668px) {
+  #main {
+    width: 530px; } }
+@media (min-width: 1366px) {
+  #main {
+    padding-bottom: 40px; } }
+footer {
+  background: #666666;
+  width: 100%;
+  border-top: 1px solid #000;
+  clear: both; }
+  footer .inner {
+    margin: 0 auto; }
+    footer .inner p {
+      color: #fff;
+      font-size: 0.625em;
+      line-height: 2.4em;
+      margin: 0px 0px 0px 25px;
+      padding: 15px 0px; }
+
+@media (min-width: 668px) {
+  footer .inner {
+    width: 530px; } }
+img {
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+  vertical-align: middle;
+  max-width: 100%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(js/boxsizing.htc); }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZmJmYmZiIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(25%, #fbfbfb), color-stop(50%, #f7f7f7), color-stop(75%, #ededed), color-stop(100%, #dbdbdb));
+  background-image: -moz-linear-gradient(#ffffff, #fbfbfb, #f7f7f7, #ededed, #dbdbdb);
+  background-image: -webkit-linear-gradient(#ffffff, #fbfbfb, #f7f7f7, #ededed, #dbdbdb);
+  background-image: linear-gradient(#ffffff, #fbfbfb, #f7f7f7, #ededed, #dbdbdb); }

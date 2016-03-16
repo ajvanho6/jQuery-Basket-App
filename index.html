@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>NetCentric</title>
+    <meta name="description" content="Small Cart App">
+    <meta name="keywords" content="shopping cart, netcentric">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="author" href="https://www.linkedin.com/in/ibaresic" />
+    <link rel="canonical" href="http://www.linktoapp.com" />
+    <link href="css/screen.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<header>
+  <div class="sprites-logo"></div>
+</header>
+
+<section id="main">
+  <div class="textContent">
+    <h1>Your Basket</h1>
+    <p>Items you have added to your basket are shown below. Adjust the quantities or remove items before continuing your purchase.</p>
+  </div>
+
+  <div class="cartContent">
+      <form method="POST" action="" accept-charset="UTF-8" id="formCart" name="mainForm">
+      <table id="table">
+        <thead>
+          <tr>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Qty</td>
+            <td>Cost</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="empty">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr id="one" class="repeat">
+            <td>Cotton T-Shirt, Medium</td>
+            <td><span class="staticOne"></span></td>
+            <td>
+              <input type="text" value="1" id="qty" class="integer" maxlength="2" name="item1">
+              <div class="sprites-plus-sign qtyPlus"></div>
+              <div class="sprites-minus-sign qtyMinus"></div>
+            </td>
+            <td>
+              <span>&pound;</span><input class="read up" id="cotton" value ="1.99" readonly name="value1">
+            </td>
+            <td>
+              <div class="sprites-trash removeOne"></div>
+            </td>
+          </tr>
+
+          <tr id="two" class="repeat">
+            <td>Baseball Cap, One Size</td>
+            <td>
+              <span class="staticTwo"></span>
+            </td>
+            <td>
+              <input type="text" value="2" id="qtyTwo" class="integer" maxlength="2" name="item2">
+              <div class="sprites-plus-sign qtyTwoplus"></div>
+              <div class="sprites-minus-sign qtyTwominus"></div>
+            </td>
+            <td>
+              <span>&pound;</span><input class="read up" id="baseball" value ="5.98" readonly name="value2">
+            </td>
+            <td>
+              <div class="sprites-trash removeTwo"></div>
+            </td>
+          </tr>
+
+          <tr id="three" class="repeat">
+            <td>Swim Shorts, Medium</td>
+            <td><span class="staticThree"></span></td>
+            <td>
+              <input type="text" value="1" id="qtyThree" class="integer" maxlength="2" name="item3">
+              <div class="sprites-plus-sign qtyThreeplus"></div>
+              <div class="sprites-minus-sign qtyThreeminus"></div>
+            </td>
+            <td>
+              <span>&pound;</span><input class="read up" id="shorts" value ="3.99" readonly name="value3">
+            </td>
+            <td>
+              <div class="sprites-trash removeThree"></div>
+            </td>
+          </tr>
+
+          <tr id="four">
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td>
+              <span>&pound;</span><input class="read" id="subtotal" value ="11.96" readonly name="subtotal">
+            </td>
+            <td></td>
+          </tr>
+          <tr id="five">
+            <td>VAT @ 20%</td>
+            <td></td>
+            <td></td>
+            <td>
+              <span>&pound;</span><input id="vat" class="read" value ="2.39" readonly name="vat">
+            </td>
+            <td></td>
+          </tr>
+          <tr id="six">
+            <td>Total Cost</td>
+            <td></td>
+            <td></td>
+            <td>
+              <span>&pound;</span><input id="total" class="read" value ="14.35" readonly name="total">
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <input id="endCart" type="submit" name="name" value="Buy now >>">
+    </form>
+</div>
+<div class="help"></div>
+</section>
+<footer>
+  <div class="inner">
+    <p>© Netcentric - Enterprise Web Excellence</p>
+  </div>
+</footer>
+
+
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

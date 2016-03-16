@@ -1,0 +1,35 @@
+
+ @import "compass/reset";
+ @import "compass/css3";
+ @import "compass/typography";
+ @import "../partials/functions";
+ @import "../partials/variables";
+ @import "../partials/utility";
+ @import "../layout/header";
+ @import "../layout/main";
+ @import "../layout/footer";
+
+
+ //some styles
+
+ img {
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+   *behavior: url(js/boxsizing.htc);
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+body{
+  @include background-image(linear-gradient($white, #fbfbfb, #f7f7f7,#ededed,#dbdbdb));
+}
